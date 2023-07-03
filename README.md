@@ -26,11 +26,13 @@
 <b> [3] merge_image_features.py </b>
 
 : 이미지 피쳐맵 간 통합
- 
-(1) args
-  - "option" _원하는 데이터 지정
 
 - input: image_features_{option}_{feature_num}.pkl
 - output: image_feature_processed_{option}.csv
+  
+(1) args
+  - "option" _원하는 데이터 지정
+
+
 
 
