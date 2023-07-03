@@ -17,11 +17,11 @@
 : 시험정보 & 야금학적 특징 통합
 
 (1) args
-  - "data_dir" _시험정보 데이터 경로
+  - "data_dir" _시험정보 데이터 경로 (gasturbin_data.csv)
   - "in792sx_dir" _in792sx 야금학적 특징 데이터 경로
   - "in792sx_interrupt_dir"_in792sx interrupt 야금학적 특징 데이터 경로
-  - "cm939w_dir" _cm939w 야금학적 특징 데이터 경로
-  - "save_dir"_결과 저장 경로
+  - "cm939w_dir" _cm939w 야금학적 특징 데이터 경로 
+  - "save_dir"_결과 저장 경로 (data_all_feature.csv)
     
 <b> [3] data_preprocess_step2.ipynb </b>
 
