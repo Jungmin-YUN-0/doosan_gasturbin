@@ -3,11 +3,11 @@ import argparse
 
 parser = argparse.ArgumentParser()
         
-parser.add_argument('-data_dir', required=True, help="data path")
+parser.add_argument('-data_dir', default="gasturbin_data.csv", help="data path")
 parser.add_argument('-in792sx_dir', required=True, help="in792sx image feature data path")
 parser.add_argument('-in792sx_interrupt_dir', required=True, help="in792sx_interrupt image feature data path")
 parser.add_argument('-cm939w_dir', required=True, help="cm939w image feature data path")
-parser.add_argument('-save_dir', required=True, help="data save path")
+parser.add_argument('-save_dir', default="data_all_feature.csv", help="data save path")
 
 opt = parser.parse_args()
 
