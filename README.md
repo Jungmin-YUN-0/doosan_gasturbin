@@ -1,6 +1,6 @@
 # doosan_gasturbin
 
-*#1 extract_iamge_feature_from_seg/inference.py *
+<b> #1 extract_iamge_feature_from_seg/inference.py </b>
 
 ← 이미지 피쳐값 추출
 
