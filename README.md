@@ -19,6 +19,7 @@
 - input: gasturbin_data.csv (원본 시험정보 데이터 - in792sx, in792sx interrupt, cm939w 통합본)
 - input: in792sx_features.csv, in792sx_interrupt_features.csv, cm939w_features.csv (야금학적 물성정보 데이터)
 - output: data_all_feature.csv
+
 (1) args
   - "data_dir" _시험정보 데이터 경로 (gasturbin_data.csv)
   - "in792sx_dir" _in792sx 야금학적 특징 데이터 경로
