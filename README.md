@@ -1,7 +1,8 @@
 # doosan_gasturbin
 
-### #1
-extract_iamge_feature_from_seg/inference.py ← 이미지 피쳐값 추출
+### #1 extract_iamge_feature_from_seg/inference.py 
+
+← 이미지 피쳐값 추출
 
 [1] args
   - "option" _원하는 데이터 지정
