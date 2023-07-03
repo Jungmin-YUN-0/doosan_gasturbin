@@ -29,4 +29,11 @@
   - "in792sx_interrupt_dir"_in792sx interrupt 야금학적 특징 데이터 경로
   - "cm939w_dir" _cm939w 야금학적 특징 데이터 경로 
   - "save_dir"_결과 저장 경로 (data_all_feature.csv)
-    
+
+<b> [23] saint/train.py </b>
+
+ regression 독립변수 변경 → saint/data_openml.py 
+   > data_prep_openml function → X, categorical_indicator, attribute_names 지정
+
+ 수정사항 : models/model.py
+  > RoWColTransformer class → nfeats 값 설정, x=torch.cat((x,image_feature), dim=1) 설정
