@@ -23,11 +23,14 @@
   - "cm939w_dir" _cm939w 야금학적 특징 데이터 경로 
   - "save_dir"_결과 저장 경로 (data_all_feature.csv)
     
-<b> [3] data_preprocess_step2.ipynb </b>
+<b> [3] merge_image_features.py </b>
 
-: 시험정보 & 야금학적 특징 통합
+: 이미지 피쳐맵 간 통합
  
-- input: gasturbin_data.csv
-- output: data_all_feature.csv
+(1) args
+  - "option" _원하는 데이터 지정
+
+- input: image_features_{option}_{feature_num}.pkl
+- output: image_feature_processed_{option}.csv
 
 
