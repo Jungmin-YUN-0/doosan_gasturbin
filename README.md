@@ -12,7 +12,7 @@
   - "data_root_path" _데이터셋 경로
   - "output_dir" _결과 저장 경로
 
-<b> [2] merge_image_feature.py </b>
+<b> [2] merge_data.py </b>
 
 : 시험정보 & 야금학적 특징 통합
 
