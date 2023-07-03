@@ -30,7 +30,7 @@
   - "cm939w_dir" _cm939w 야금학적 특징 데이터 경로 
   - "save_dir"_결과 저장 경로 (data_all_feature.csv)
 
-<b> [23] saint/train.py </b>
+<b> [3] saint/train.py </b>
 
  regression 독립변수 변경 → saint/data_openml.py 
    > data_prep_openml function → X, categorical_indicator, attribute_names 지정
