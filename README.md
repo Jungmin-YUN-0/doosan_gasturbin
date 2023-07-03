@@ -32,6 +32,8 @@
 
 <b> [3] saint/train.py </b>
 
+: regression 수행
+
  regression 독립변수 변경 → saint/data_openml.py 
    > data_prep_openml function → X, categorical_indicator, attribute_names 지정
 
