@@ -288,14 +288,3 @@ else:
     print(f"RMSLE-based || MAE:{RMSLE_best_test_mae} | RMSLE:{RMSLE_best_test_rmsle} | R2:{RMSLE_best_test_r2} | ACC:{RMSLE_best_test_ratio}")
     print(f"ACC-based || MAE:{ACC_best_test_mae} | RMSLE:{ACC_best_test_rmsle} | R2:{ACC_best_test_r2} | ACC:{ACC_best_test_ratio}")
     #print(f'best valid ratio: {best_valid_ratio} | best test ratio: {best_test_ratio} ')
-
-
-'''
-if opt.active_log=='True':
-    if opt.task == 'regression':
-        wandb.log({'total_parameters': total_parameters, 'test_rmse_bestep':best_test_rmse , 
-        'cat_dims':len(cat_idxs) , 'con_dims':len(con_idxs) })        
-    else:
-        wandb.log({'total_parameters': total_parameters, 'test_auroc_bestep':best_test_auroc , 
-        'test_accuracy_bestep':best_test_accuracy,'cat_dims':len(cat_idxs) , 'con_dims':len(con_idxs) })
-'''
