@@ -111,8 +111,6 @@ def data_prep_openml(ds_id, seed, task, feature_num, datasplit=[.65, .15, .2]):
         l_enc = LabelEncoder() 
         y = l_enc.fit_transform(y)
 
-    #X_add_feature = dataset[['stress_mpa','temp_oc','LMP','image_feature']]
-    #dataset[['image_feature']][train_indices]
     X_train, y_train = data_split(X,y,nan_mask,train_indices)
     X_valid, y_valid = data_split(X,y,nan_mask,valid_indices)
     X_test, y_test = data_split(X,y,nan_mask,test_indices)
@@ -177,17 +175,9 @@ class DataSetCatCon(Dataset):
         if continuous_mean_std is not None:
             mean, std = continuous_mean_std
             self.X2 = (self.X2 - mean) / std
-        #self.transform = transforms.Compose([transforms.ToTensor()])
         
     def __len__(self):
         return len(self.y)
     
     def __getitem__(self, idx):
-        # X1 has categorical data, X2 has continuous
-        #a = np.concatenate((self.cls[idx], self.X1[idx]))
-        #print('check1_1')
-        #c = self.IF_train[idx]
-        #print('check1_2')
-        #b = self.y[idx]
-        #return np.concatenate((self.cls[idx], self.X1[idx])), self.X2[idx],self.y[idx], np.concatenate((self.cls_mask[idx], self.X1_mask[idx])), self.X2_mask[idx]
         return np.concatenate((self.cls[idx], self.X1[idx])), self.X2[idx], self.y[idx], np.concatenate((self.cls_mask[idx], self.X1_mask[idx])), self.X2_mask[idx], self.IF[idx], self.y_upper[idx], self.y_lower[idx] #self.transform(self.IF_train[idx])
