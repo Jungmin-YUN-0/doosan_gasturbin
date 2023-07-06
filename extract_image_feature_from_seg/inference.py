@@ -112,7 +112,7 @@ def main():
          'feature_output':feature_output,
            }
     
-    ## 결과 저장 위치 설정
+    # 결과 저장 위치 설정
     output_dir = f'/home/jungmin/workspace/doosan/image_features_{str(option)}_{str(feature_name)}.pkl'
     print('[Info] Dumping the image features to pickle file')
     dill.dump(data, open(output_dir, 'wb'))
